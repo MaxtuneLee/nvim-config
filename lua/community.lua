@@ -6,7 +6,6 @@
 return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
-  { import = "ahmedkhalf/project.nvim" },
   {
     "loctvl842/monokai-pro.nvim",
     config = function()
