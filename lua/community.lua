@@ -54,6 +54,31 @@ return {
       }
     end,
   },
-
+  { import = "astrocommunity.pack.rust" },
+  {
+    "zbirenbaum/copilot.lua",
+    cmd = "Copilot",
+    event = "User AstroFile",
+    opts = { suggestion = { auto_trigger = true, debounce = 150 } },
+  },
+  {
+    "f-person/git-blame.nvim",
+    event = "User AstroGitFile",
+    config = function()
+      require("gitblame").setup {
+        delay = 1000,
+      }
+    end,
+  },
+  {
+    "ahmedkhalf/project.nvim",
+    config = function()
+      require("project_nvim").setup {
+        -- your configuration comes here
+        --       -- or leave it empty to use the default settings
+        --             -- refer to the configuration section below
+      }
+    end,
+  },
   -- import/override with your plugins folder
 }
