@@ -80,5 +80,7 @@ return {
       }
     end,
   },
+  { import = "astrocommunity.split-and-window.minimap-vim" },
+  { import = "astrocommunity.motion.mini-move"}
   -- import/override with your plugins folder
 }
