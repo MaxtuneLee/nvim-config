@@ -29,15 +29,6 @@ return {
   },
   },
   {
-    "Pocco81/auto-save.nvim",
-    config = function()
-      require("auto-save").setup {
-        -- your config goes here
-        -- or just leave it empty :)
-      }
-    end,
-  },
-  {
     "numToStr/Comment.nvim",
     opts = {
       -- add any options here
@@ -81,8 +72,6 @@ return {
     end,
   },
   { import = "astrocommunity.split-and-window.minimap-vim" },
-  { import = "astrocommunity.motion.mini-move" },
-  { import = "astrocommunity.scrolling.mini-animate" },
   { "gen740/SmoothCursor.nvim", config = function() require("smoothcursor").setup() end },
   -- import/override with your plugins folder
 }
